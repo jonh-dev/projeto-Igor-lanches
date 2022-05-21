@@ -1,0 +1,417 @@
+/*  Configurações Gerais */
+
+@charset 'UTF-8';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+/*****/
+
+/* Header */
+
+/* Nav */
+
+.navbar{
+    background: linear-gradient(90deg, rgba(250,230,188,1) 12%, rgba(244,211,146,1) 38%, rgba(231,182,80,1) 71%, rgba(219,163,41,1) 100%);
+}
+
+.offcanvas.offcanvas-start{
+    text-align: left;
+}
+
+.offcanvas.offcanvas.show{
+    background: linear-gradient(360deg, rgba(250,230,188,1) 12%, rgba(244,211,146,1) 38%, rgba(231,182,80,1) 71%, rgba(219,163,41,1) 100%);
+}
+
+nav{
+    width: 100%;
+}
+
+.navbar-nav{
+    justify-content: end;
+    width: 100%;
+    gap: 30px;
+}
+
+.navbar-toggler{
+    border-color: white;
+    color: white;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255,9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.offcanvas.show ul{
+    gap: 0;
+}
+
+.offcanvas.show li{
+    border-bottom: 1px solid white;
+}
+
+.offcanvas.show a:hover{
+    background: rgb(224,209,176);
+}
+
+.navbar-nav a {
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*****/
+
+/*****/
+
+/* Main */
+
+/* Section 01 */
+
+.bg-top{
+    width: 100%;
+    min-height: 80vh;
+    background-image: url('../assets/Bg1.jpg');
+    background-size: cover;
+    background-position: right bottom;
+    background-attachment: fixed;
+    position: relative;
+}
+
+section.bg-top .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(87, 87, 87, 0.144);
+}
+
+.fix-zindex{
+    position: relative;
+    z-index: 2;
+}
+
+.text-bg{
+    color: white;
+    margin-top: 150px;
+}
+
+.text-bg h4{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.text-bg span{
+    color: orangered;
+}
+
+.text-bg p{
+    text-align: justify;
+}
+
+.btn.btn-primary{
+    text-transform: uppercase;
+    font-weight: bold;
+    --bs-btn-bg: orangered;
+    --bs-btn-border-color: rgba(190, 51, 1, 0.815);
+    --bs-btn-hover-bg: #fcad04;
+    --bs-btn-hover-border-color: #cf8f04;
+    --bs-btn-active-bg: #fcad04;
+    --bs-btn-active-border-color: orangered;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(255, 155, 6, 0.125);
+    --bs-btn-focus-shadow-rgb: 255,155,6;
+}
+
+/*****/
+
+/* Section 02 */
+
+section.call{
+    padding: 20px 0;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 18%, rgba(244,211,146,1) 45%, rgba(231,182,80,1) 71%, rgba(219,163,41,1) 100%);
+}
+
+section.call svg{   
+    margin-top: 10px;
+    color:orangered ;
+}
+
+/*****/
+
+/* Section 03 */
+
+section.about{
+    margin-top: 40px;
+}
+
+.custom-title{
+    padding-left: 0;
+    text-align: left !important;
+    position: relative;
+}
+  
+.custom-title h4{
+    padding-right: 10px;
+    font-size: 30px;
+    color: orangered;
+    background-color: white;
+    display: inline-block;
+    z-index: 2;
+    position: relative;
+}
+  
+.custom-title div{
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 1;
+    background-color: orangered;
+}
+
+.text-about{
+    margin: 40px 0;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.modal-body{
+    text-align: justify;
+}
+
+/*****/
+
+/* Section 04 */
+
+.ab-sec{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 785px;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(250,193,72,1) 19%, rgba(255,255,255,1) 47%, rgba(250,193,72,1) 83%, rgba(255,255,255,1) 100%);
+}
+
+section.photo1{
+    width: 100%;
+    min-height: 500px;
+    background-image: url('../assets/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+section.photo1 .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(87, 87, 87, 0.144);
+}
+
+section.photo1 .text-bg{
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+}
+
+section.photo1 .text-bg h4, section.photo1 .text-bg p{
+    text-align: center;
+}
+
+
+/*****/
+
+/* Section 05 */
+
+section.title{
+    margin: 40px 0 10px 0;
+}
+
+/*****/
+
+/* Section 06 */
+
+section.onlyus{
+    padding: 30px 0;
+}
+
+section.onlyus .box{
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+}
+
+section.onlyus .col-md-4 h4{
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+section.onlyus .col-md-4 svg{
+    margin-right: 15px;
+}
+
+section.onlyus .col-md-4 p{
+    line-height: 30px;
+    text-align: justify;
+}
+
+/*****/
+
+/* Section 07 */
+
+.ab-sec2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 680px;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(246,193,106,1) 10%, rgba(255,158,0,1) 50%, rgba(255,199,109,1) 90%, rgba(255,255,255,1) 100%);
+}
+
+section.space{
+    padding: 20px 0;
+}
+
+section.photo2{
+    width: 100%;
+    min-height: 500px;
+    background-image: url('../assets/bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+section.photo2 .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(87, 87, 87, 0.144);
+}
+
+section.photo2 .text-bg{
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+}
+
+section.photo2 .text-bg h4, section.photo2 .text-bg p{
+    text-align: center;
+}
+
+/*****/
+
+/* Section 08 */
+
+
+section.contact .form{
+    display: flex;
+    width: 100%;
+}
+
+section.contact .form form{
+    max-width: 500px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+section.contact .form h2{
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.164);
+    text-transform: uppercase;
+}
+
+section.contact .form h2 svg{
+    margin-top: 4px;
+    margin-right: 10px;
+}
+
+section.contact .form p{
+    padding: 0px 3px;
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+    color: #000000;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+section.contact .form input:not(:last-child){
+    outline: none;
+    width: 100%;
+    margin-top: 8px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+    border: 1px solid #dadada;
+    border-radius: 8px;
+}
+
+section.contact .form textarea{
+    outline: none;
+    width: 100%;
+    height: 121px;
+    margin-top: 8px;
+    line-height: 35px;
+    padding-left: 10px;
+    border: 1px solid #dadada;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+section.contact .box-btn{
+    margin-top: 20px;
+}
+/*****/
+
+/*****/
+
+/* Footer */
+
+.ab-sec3{
+    background: linear-gradient(0deg, rgba(255,158,0,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.py-5{
+    padding-bottom: 0 !important;
+}
+
+.col-2{
+    margin-bottom: 20px;
+}
+
+footer .svg-inline--fa {
+   height: 30px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer span{
+    color: orangered;
+    font-weight: bold;
+}
+
+/*****/
