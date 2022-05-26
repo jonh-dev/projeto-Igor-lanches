@@ -1,5 +1,9 @@
+$('.nav-item a').click(function(){ 
+    $('.offcanvas').offcanvas('hide'); 
+});
+
 $(function(){
-    $('nav a').click(function(){
+    $('.nav-item a').click(function(){
         var href = $(this).attr('href');
         var offSetTop = $(href).offset().top;
 
